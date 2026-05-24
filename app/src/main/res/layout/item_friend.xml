@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:padding="12dp">
+
+    <!-- Drag handle — only visible for pinned friends, hidden for regular -->
+    <TextView
+        android:id="@+id/dragHandle"
+        android:layout_width="32dp"
+        android:layout_height="wrap_content"
+        android:text="⠿"
+        android:textSize="20sp"
+        android:textColor="?attr/colorOnSurface"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_marginEnd="4dp"
+        android:contentDescription="Drag to reorder"/>
+
+    <!-- Round profile picture -->
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/friendItemPic"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@mipmap/ic_launcher_round"
+        android:layout_marginEnd="12dp"/>
+
+    <!-- Username + status column -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/friendItemName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="?attr/colorOnSurface"/>
+
+        <TextView
+            android:id="@+id/friendItemStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:textColor="?attr/colorOnSurface"/>
+
+    </LinearLayout>
+
+    <!-- 3-dot menu button — explicit color so visible in both themes -->
+    <Button
+        android:id="@+id/friendItemMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="⋮"
+        android:textSize="20sp"
+        android:textColor="?attr/colorOnSurface"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:contentDescription="Options"/>
+
+</LinearLayout>

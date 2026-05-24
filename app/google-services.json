@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "473910964042",
+    "project_id": "poing-eb589",
+    "storage_bucket": "poing-eb589.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:473910964042:android:c900b9e70bb9386ac95bb3",
+        "android_client_info": {
+          "package_name": "com.Poing.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBuwNKUb5t9JRbYFyC2RZbgcmYkgw1Ibnk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
